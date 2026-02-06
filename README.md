@@ -32,7 +32,7 @@
 
 ### 下载与运行
 1. **下载可执行文件**
-   - 从[Release页面](https://github.com/yourusername/new-year-blessings-popup/releases)下载最新版
+   - 从[Release页面](https://github.com/lie-666/2026happy/releases)下载最新版
    - 或直接下载：`新年祝福弹窗.exe`
 
 2. **直接双击运行**
