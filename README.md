@@ -1,9 +1,9 @@
 # 🎊 新年祝福弹窗程序 (New Year Blessings Popup)
 
-[![版本](https://img.shields.io/badge/版本-v1.0.0-brightgreen)](https://github.com/yourusername/new-year-blessings-popup/releases)
+[![版本](https://img.shields.io/badge/版本-v1.0.0-brightgreen)](https://github.com/lie-666/2026happy/releases)
 [![许可证](https://img.shields.io/badge/许可证-Apache%202.0-blue)](LICENSE)
-[![系统支持](https://img.shields.io/badge/平台-Windows%207+-success)](https://github.com/yourusername/new-year-blessings-popup)
-[![大小](https://img.shields.io/badge/文件大小-8MB-lightgrey)]()
+[![系统支持](https://img.shields.io/badge/平台-Windows%207+-success)](https://github.com/lie-666/2026happy)
+[![大小](https://img.shields.io/badge/文件大小-10.73MB-lightgrey)]()
 [![无需安装](https://img.shields.io/badge/运行方式-绿色免安装-orange)]()
 
 一个已编译为独立可执行文件的新年祝福弹窗程序，无需Python环境即可在Windows系统上直接运行。程序会自动创建大量带有新年祝福的彩色弹窗，营造浓厚的节日氛围。
@@ -12,7 +12,7 @@
 
 ### 文件详情
 - **文件名**: `新年祝福弹窗.exe`
-- **文件大小**: 约8-10MB
+- **文件大小**: 10.73 MB
 - **编译方式**: PyInstaller单文件打包
 - **系统要求**: Windows 7/8/10/11 (64位)
 - **运行环境**: 完全独立，无需安装Python或任何依赖库
@@ -25,6 +25,8 @@
 ✅ 运行后不会残留系统垃圾
 ✅ 开源代码透明可查
 ```
+您可在 [微步云沙箱检测](https://s.threatbook.com/report/file/6bebc8a1a0613a6b2dcca194181d932cb70b63843dc4d226338582b9a151d0d7) 中查看代码检测
+
 
 ## 🚀 一键运行体验
 
@@ -57,23 +59,13 @@
 
 ## ⚙️ 高级使用方式
 
-### 命令行参数（可选）
-```cmd
-# 基本用法 - 双击运行或：
-新年祝福弹窗.exe
-
-# 查看帮助信息
-新年祝福弹窗.exe --help
-
-# 指定弹窗数量（默认300个）
-新年祝福弹窗.exe --count 100
-
-# 控制弹窗显示时间（默认5秒）
-新年祝福弹窗.exe --duration 3
-
-# 批量创建弹窗的速度（默认0.005秒）
-新年祝福弹窗.exe --delay 0.01
+### 可在源代码内编辑
+源代码中有丰富的注释，如
 ```
+# 等待0.005秒
+time.sleep(0.005)
+```
+可自行编辑后再用Pyinstall打包
 
 ### 创建桌面快捷方式
 1. 右键点击 `新年祝福弹窗.exe`
@@ -119,34 +111,18 @@
 
 ## 🔧 自定义配置（高级用户）
 
-### 方法一：配置文件定制
-创建 `config.ini` 文件与exe同目录：
-```ini
-[Settings]
-window_count = 200
-display_duration = 7
-creation_delay = 0.003
-window_width = 350
-window_height = 150
-
-[Appearance]
-font_size = 24
-title_font_size = 12
-always_on_top = true
-```
-
-### 方法二：修改源代码重新打包
+### 修改源代码重新打包
 如需深度定制，需要Python环境重新编译：
 ```bash
 # 1. 克隆源代码
-git clone https://github.com/yourusername/new-year-blessings-popup.git
+git clone https://github.com/lie-666/2026happy.git
 
 # 2. 修改配置（修改new_year_blessings.py）
 # 3. 安装PyInstaller
 pip install pyinstaller
 
 # 4. 重新打包
-pyinstaller --onefile --windowed --name "新年祝福弹窗" new_year_blessings.py
+pyinstaller --onefile --windowed --name "弹窗祝福" new_year_blessings.py
 
 # 5. 生成新exe在dist文件夹
 ```
@@ -155,17 +131,17 @@ pyinstaller --onefile --windowed --name "新年祝福弹窗" new_year_blessings.
 
 ### 对于较旧电脑
 ```
-1. 减少弹窗数量：使用 --count 100 参数
-2. 增加创建间隔：使用 --delay 0.02 参数
+1. 减少弹窗数量：在原代码将count修改为 100 参数
+2. 增加创建间隔：在原代码将delay修改为 0.02 参数
 3. 关闭其他大型程序释放内存
 4. 建议在运行前重启explorer.exe
 ```
 
 ### 对于高性能电脑
 ```
-1. 增加弹窗数量：--count 500
-2. 加快创建速度：--delay 0.001
-3. 延长显示时间：--duration 10
+1. 减少弹窗数量：在原代码将count修改为 500 参数
+2. 增加创建间隔：在原代码将delay修改为 0.01 参数
+3. 延长显示时间：在原代码将duration 修改为 10 参数
 4. 可同时运行多个实例创造叠加效果
 ```
 
@@ -202,7 +178,7 @@ pyinstaller --onefile --windowed --name "新年祝福弹窗" new_year_blessings.
 
 ```
 项目基于Apache 2.0开源协议发布
-源代码仓库：https://github.com/yourusername/new-year-blessings-popup
+源代码仓库：https://github.com/lie-666/2026happy
 欢迎提交Issue和Pull Request
 ```
 
@@ -218,4 +194,3 @@ pyinstaller --onefile --windowed --name "新年祝福弹窗" new_year_blessings.
 
 **祝您使用愉快，新年快乐！🎉**  
 如有问题或建议，请访问GitHub仓库提交反馈。
-```
