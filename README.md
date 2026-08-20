@@ -130,19 +130,15 @@ pyinstaller --onefile --windowed --name "弹窗祝福" new_year_blessings.py
 ## 📊 性能优化建议
 
 ### 对于较旧电脑
+#### 不建议运行，如果偏要运行，建议执行以下操作
 ```
-1. 减少弹窗数量：在原代码将count修改为 100 参数
-2. 增加创建间隔：在原代码将delay修改为 0.02 参数
-3. 关闭其他大型程序释放内存
-4. 建议在运行前重启explorer.exe
+1.. 关闭其他大型程序释放内存
+2.. 建议在运行前重启explorer.exe
 ```
 
 ### 对于高性能电脑
 ```
-1. 减少弹窗数量：在原代码将count修改为 500 参数
-2. 增加创建间隔：在原代码将delay修改为 0.01 参数
-3. 延长显示时间：在原代码将duration 修改为 10 参数
-4. 可同时运行多个实例创造叠加效果
+1. 使劲造吧，随便
 ```
 
 ## ❓ 常见问题解答
@@ -151,7 +147,7 @@ pyinstaller --onefile --windowed --name "弹窗祝福" new_year_blessings.py
 **A**: 等待5-10秒会自动关闭，或按 `Alt+F4` 关闭最上层窗口。建议下次运行时减少弹窗数量。
 
 ### Q2: 杀毒软件报告威胁？
-**A**: 这是PyInstaller打包程序的误报。可在[Virustotal](https://www.virustotal.com)验证，或添加信任。
+**A**: 这是PyInstaller打包程序的误报。可在[微步云沙箱检测](https://s.threatbook.com/report/file/6bebc8a1a0613a6b2dcca194181d932cb70b63843dc4d226338582b9a151d0d7) 查看此程序的检验报告。
 
 ### Q3: 如何停止运行中的程序？
 **A**: 
@@ -182,15 +178,6 @@ pyinstaller --onefile --windowed --name "弹窗祝福" new_year_blessings.py
 欢迎提交Issue和Pull Request
 ```
 
-## 🎁 特别提示
-
-在以下时间运行效果更佳：
-- 新年倒计时（12月31日23:59）
-- 春节期间拜访亲友时
-- 公司年会活动现场
-- 任何需要营造节日氛围的场合
-
----
 
 **祝您使用愉快，新年快乐！🎉**  
 如有问题或建议，请访问GitHub仓库提交反馈。
